@@ -1,0 +1,21 @@
+<form class="container bg-dark text-light p-5" action="/atualizar/{{id}}" method="POST">
+
+   <input type="hidden" value="{{id}}" name="id">
+
+   <div class="mb-3">
+      <label class="form-label">Nome do Aluno</label>
+      <input type="text" class="form-control" name="aluno" value="{{aluno}}">
+
+   </div>
+   <div class="mb-3">
+      <label class="form-label">Nota 1</label>
+      <input type="number" class="form-control" name="nota1" value="{{nota1}}">
+   </div>
+   <div class="mb-3">
+      <label class="form-label">Nota 2</label>
+      <input type="number" class="form-control" name="nota2" value="{{nota2}}">
+   </div>
+
+   <button type="submit" class="btn btn-primary">Atualizar</button>
+   <a class="btn btn-secondary" href="/">Voltar</a>
+</form>

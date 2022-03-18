@@ -1,0 +1,31 @@
+<div class="container mt-2 p-5 bg-black d-flex align-items-center justify-content-center rounded">
+   <img src="./logo-apex.png">
+</div>
+
+<div class="container mt-5">
+   <a href="/cadastrar" class="btn btn-success px-3 mb-3 float-end">Cadastrar</a>
+   <table class="table table-bordered table-striped text-center">
+      <thead>
+         <tr>
+            <th><u>Nome</u></th>
+            <th><u>Nota 1</u></th>
+            <th><u>Nota 2</u></th>
+            <th><u>Atualizar</u></th>
+            <th><u>Excluir</u></th>
+         </tr>
+      </thead>
+      <tbody>
+
+         {{#each alunos}}
+         <tr>
+            <td>{{aluno}}</td>
+            <td>{{nota1}}</td>
+            <td>{{nota2}}</td>
+            <td><a class="btn btn-primary" href="/atualizar/{{id}}">Atualizar</a></td>
+            <td><a class="btn btn-danger" href="/excluir/{{id}}">Excluir</a></td>
+         </tr>
+         {{/each}}
+
+      </tbody>
+   </table>
+</div>
